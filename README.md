@@ -1,6 +1,6 @@
-# CSSE-490-lab-1
+# CSSE-490-lab-2
 
-Lab 1: Photo Processing App
+Lab 2: Photo Processing App
 
 ## Project Setup
 
