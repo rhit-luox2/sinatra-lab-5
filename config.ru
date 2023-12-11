@@ -1,2 +1,3 @@
-require './hello'
-run Sinatra::Application
+require './config/environment'
+run ApplicationController
+use SimplePhotoProcessorController
