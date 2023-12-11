@@ -1,4 +1,4 @@
-# CSSE-490-lab-0
+# CSSE-490-lab-1
 
 Lab 1: Photo Processing App
 
