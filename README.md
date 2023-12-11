@@ -22,7 +22,7 @@ $ bundle
 
 Run the full test suite with `rake` or `rake test`.
 
-Run a single test with `spec spec/path/to_spec.rb:6`, replacing `spec/path/to_spec.rb` with the path to your actual test, and `6` with the actual line number of the test you are trying to run.
+Run a single test with `rspec spec/path/to_spec.rb:6`, replacing `rspec/path/to_spec.rb` with the path to your actual test, and `6` with the actual line number of the test you are trying to run.
 
 ### Running Locally
 
