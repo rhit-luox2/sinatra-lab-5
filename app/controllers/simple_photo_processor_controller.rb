@@ -10,7 +10,7 @@ class SimplePhotoProcessorController < ApplicationController
   end
 
   post '/simple_photo_processor' do
-    puts "Params are: #{params}"
+    # puts "Params are: #{params}"
     if params[:imageUpload]
       input_image = Magick::Image.read(params[:imageUpload][:tempfile].path)[0]
       ## TODO: Actually transform image here, instead of just serving it back to the user

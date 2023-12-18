@@ -25,7 +25,7 @@ end
 Capybara.app = app
 # NOTE: Change the javascript_driver to :selenium_chrome_headless
 # once you've gotten over the novelty of seeing your tests run live!
-Capybara.javascript_driver = :selenium_chrome
+Capybara.javascript_driver = :selenium_chrome_headless
 Capybara.save_path = 'tmp'
 
 # This is here to correct a bug around saving the screenshots in the appropriate

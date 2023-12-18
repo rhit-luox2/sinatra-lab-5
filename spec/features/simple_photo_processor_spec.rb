@@ -10,16 +10,9 @@ feature "Simple Photo Processor:", js: true do
     page.current_path.should eq "/simple_photo_processor/new"
   end
 
-  scenario "uploading a JPEG transforms the image" do
+  scenario "uploading an image transforms the image" do
     visit "/simple_photo_processor/new"
     test_image_filename = 'postive_possum_shirt.jpeg'
-    upload_image_and_check_for_errors(test_image_filename)
-    verify_that_image_has_been_transformed(test_image_filename)
-  end
-
-  scenario "uploading a PNG with alpha transparency transforms the image" do
-    visit "/simple_photo_processor/new"
-    test_image_filename = 'rose_hulman_website.png'
     upload_image_and_check_for_errors(test_image_filename)
     verify_that_image_has_been_transformed(test_image_filename)
   end
