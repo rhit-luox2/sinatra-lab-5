@@ -1,6 +1,6 @@
-# CSSE-490-lab-2
+# CSSE-490-lab-3
 
-Lab 2: Photo Processing App
+Lab 3: Photo Processing App
 
 ## Project Setup
 
@@ -9,11 +9,9 @@ Lab 2: Photo Processing App
 
 Make sure you have Ruby 3.1.4 or Ruby 3.2.x installed locally [on Windows using WSL](https://gorails.com/setup/windows/11) or [on Mac/Linux](https://www.ruby-lang.org/en/documentation/installation/). To push to Heroku, you'll also need to install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)).  If using Ruby 3.2.x, update the `.ruby-version` file to match your version of Ruby.
 
-You will need `imagemagick` installed in order to do this lab. Instructions for installing ImageMagick can be found here: https://github.com/rmagick/rmagick  **Important:** If you are using WSL, you should be installing this in your Ubuntu VM, not on Windows itself.
-
 ```sh
 $ git clone <repo url>
-$ cd lab-1-<your_github_username>
+$ cd lab-3-<your_github_username>
 
 $ bundle
 ```
