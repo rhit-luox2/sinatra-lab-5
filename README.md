@@ -18,6 +18,16 @@ $ cd lab-3-<your_github_username>
 $ bundle
 ```
 
+Prepare the database:
+```
+$ cp config/database.yml.example config/database.yml
+# Update config/database.yml with any username or password information required for your local postgres server
+$ rake db:create:all
+$ rake db:migrate
+$ rake db:environment:set
+$ rake db:test:prepare
+```
+
 ### Running Tests
 
 Run the full test suite with `rake` or `rake test`.
@@ -28,15 +38,6 @@ Run a single test with `rspec spec/path/to_spec.rb:6`, replacing `rspec/path/to_
 
 Create the local development databases and load them with the correct schema.
 
-```
-$ cp config/database.yml.example config/database.yml
-# Update config/database.yml with any username or password information required for your local postgres server
-$ rake db:create:all
-$ rake db:migrate
-$ rake db:environment:set
-$ rake db:test:prepare
-
-```
 
 ```sh
 $ rerun rackup
