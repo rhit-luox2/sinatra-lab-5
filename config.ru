@@ -1,3 +1,3 @@
 require './config/environment'
 run ApplicationController
-use SimplePhotoProcessorController
+use TasksController
