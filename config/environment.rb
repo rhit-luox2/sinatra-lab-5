@@ -1,5 +1,5 @@
 ENV['APP_ENV'] ||= "development"
-SINATRA_ROOT = File.expand_path(File.join(File.dirname(__FILE__), ".."))
+SINATRA_ROOT ||= File.expand_path(File.join(File.dirname(__FILE__), ".."))
 
 require 'bundler/setup'
 Bundler.require(:default, ENV['APP_ENV'])
