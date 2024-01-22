@@ -1,3 +1,5 @@
 require './config/environment'
 run ApplicationController
-use TasksController
+ApplicationController.subclasses.each do |controller|
+    use controller
+end
