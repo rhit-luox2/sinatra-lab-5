@@ -1,42 +1,21 @@
-<!-- Step 1: Add a heading, per the test failure! -->
-
 <!--
-  Step 7:
-  Uncomment the code below by removing the `#` characters from the ERB
--->
-<!--
-  Step 37: Turn your task descriptions into links to the (soon to exist) edit page:
-  <a href="/tasks/12">Eat Breakfast</a>
-           ^ the path above fits in with the REST convention
-           ^ you can get the id of the task with `task.id`
--->
-<ul id="todos">
-  <%# tasks.each do |task| %>
-    <li class="task">
-      <%#= task.description %>
-    </li>
-  <%# end %>
-</ul>
-<!--
-  Step 8:
-  Let the error "undefined local variable or method `tasks'"
-  thrown by the code above, drive you to move in to the
-  controller to pass a local `tasks` variable in to this template!
--->
-
-<!-- Step 11: Remove this text -->
-<p>This page will soon be home to a TODO app!</p>
-
-<!-- Step 13: Add the message about no tasks remaining -->
-<!-- Step 14: Be sure to run the tests again -->
-<!-- Step 15: Make this text show up conditionally, only when there are no TODOs:
-  Hint 1: See https://www.puppet.com/docs/puppet/5.5/lang_template_erb.html#non-printing-tags for an
+  View Hint 1: See https://www.puppet.com/docs/puppet/5.5/lang_template_erb.html#non-printing-tags for an
   example of using an `if` statement in ERB (the default templating language included with ruby)!
 
-  Hint 2: Our `Task` class inherits from ActiveRecord. This section of the Ruby on Rails ActiveRecord
+  View Hint 2: Our `Task` class inherits from ActiveRecord. This section of the Ruby on Rails ActiveRecord
   guide shows how to "read" data using ActiveRecord: https://guides.rubyonrails.org/active_record_basics.html#read
 -->
+<h1>If you can dream it, you can TODO it!</h1>
 
+<ul id="todos">
+  <% tasks.each do |task| %>
+    <li class="task">
+      <a href="/tasks/<%=task.id %>"><%= task.description %></a>
+    </li>
+  <% end %>
+</ul>
+<% if Task.all.empty? %>
+<p>There are no tasks remaining! You should add one!</p>
+<% end %>
 
-<!-- Step 18: Create a link to the `/tasks/new`  using the text you see in the test output! -->
-<a href="">...</a>
+<a href="/tasks/new">Add task</a>

@@ -13,7 +13,7 @@ You will also need postgresql installed.  On OS X you can install it via `brew i
 
 ```sh
 $ git clone <repo url>
-$ cd lab-3-<your_github_username>
+$ cd lab-5-<your_github_username>
 # NOTE: Bundle will fail if you haven't installed postgres yet
 $ bundle
 ```
@@ -22,7 +22,7 @@ Prepare the database:
 ```
 $ cp config/database.yml.example config/database.yml
 # Update config/database.yml with any username or password information required for your local postgres server
-$ rake db:create:all
+$ rake db:create
 $ rake db:migrate
 $ rake db:environment:set
 $ rake db:test:prepare
