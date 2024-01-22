@@ -1,6 +1,6 @@
-# CSSE-490-lab-3
+# CSSE-490-lab-5
 
-Lab 3: Photo Processing App
+Lab 5: Security, Authentication, Authorization, and a SPA day for our TODO App
 
 ## Project Setup
 
@@ -33,6 +33,8 @@ $ rake db:test:prepare
 Run the full test suite with `rake` or `rake test`.
 
 Run a single test with `rspec spec/path/to_spec.rb:6`, replacing `rspec/path/to_spec.rb` with the path to your actual test, and `6` with the actual line number of the test you are trying to run.
+
+If you want to run all the tests in a file, stopping at the first failure: `rspec --fail-fast spec/path/to_spec.rb`
 
 ### Running Locally
 
