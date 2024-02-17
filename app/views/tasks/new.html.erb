@@ -1,6 +1,11 @@
 <h1>Add a New Task</h1>
+
 <form method="POST" action="/tasks" enctype="multipart/form-data">
+  <!-- Hidden field for the authenticity token -->
+  <input type="hidden" name="authenticity_token" value="<%= session[:csrf] %>">
+
   <label for="description">Task Description</label>
   <input type="text" name="description" id="description">
+
   <input type="submit" value="Save">
 </form>
